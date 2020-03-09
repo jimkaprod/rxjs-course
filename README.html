@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The RxJs In Practice Course</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h2 id="the-rxjs-in-practice-course">The RxJs In Practice Course</h2>
+<p>This repository contains the code of the <a href="https://angular-university.io/course/rxjs-course">RxJs In Practice Course</a>.</p>
+<p>This course repository is updated to Angular v9, and there is a  package-lock.json file available, for avoiding semantic versioning installation issues.</p>
+<p><img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png" alt="RxJs In Practice Course"></p>
+<h1 id="installation-pre-requisites">Installation pre-requisites</h1>
+<p>IMPORTANT: Please use the latest Node and especially NPM, to make sure the package-lock.json is used.</p>
+<p>For running this project we need and npm installed on our machine. These are some tutorials to install node in different operating systems:</p>
+<p><em>Its important to install the latest version of Node</em></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=8ODS6RM6x7g">Install Node and NPM on Windows</a></li>
+<li><a href="https://www.youtube.com/watch?v=yUdHk-Dk_BY">Install Node and NPM on Linux</a></li>
+<li><a href="https://www.youtube.com/watch?v=Imj8PgG3bZU">Install Node and NPM on Mac</a></li>
+</ul>
+<h1 id="installing-the-angular-cli">Installing the Angular CLI</h1>
+<p>With the following command the angular-cli will be installed globally in your machine:</p>
+<pre><code>npm install -g @angular/cli 
+</code></pre>
+<h1 id="how-to-install-this-repository">How To install this repository</h1>
+<p>We can install the master branch using the following commands:</p>
+<pre><code>git clone https://github.com/angular-university/rxjs-course.git
+</code></pre>
+<p>This repository is made of several separate npm modules, that are installable separately. For example, to run the au-input module, we can do the following:</p>
+<pre><code>cd rxjs-course
+npm install
+</code></pre>
+<p>Its also possible to install the modules as usual using npm:</p>
+<pre><code>npm install 
+</code></pre>
+<p>NPM 5 or above has the big advantage that if you use it you will be installing the exact same dependencies than I installed in my machine, so you wont run into issues caused by semantic versioning updates.</p>
+<p>This should take a couple of minutes. If there are issues, please post the complete error message in the Questions section of the course.</p>
+<h1 id="to-run-the-development-backend-server">To Run the Development Backend Server</h1>
+<p>In order to be able to provide realistic examples, we will need in our playground a small REST API backend server. We can start the sample application backend with the following command:</p>
+<pre><code>npm run server
+</code></pre>
+<p>This is a small Node REST API server.</p>
+<h1 id="to-run-the-development-ui-server">To run the Development UI Server</h1>
+<p>To run the frontend part of our code, we will use the Angular CLI:</p>
+<pre><code>npm start 
+</code></pre>
+<p>The application is visible at port 4200: <a href="http://localhost:4200">http://localhost:4200</a></p>
+<h1 id="important">Important</h1>
+<p>This repository has multiple branches, have a look at the beginning of each section to see the name of the branch.</p>
+<p>At certain points along the course, you will be asked to checkout other remote branches other than master. You can view all branches that you have available remotely using the following command:</p>
+<pre><code>git branch -a
+</code></pre>
+<p>The remote branches have their starting in origin, such as for example 1-navigation-and-containers.</p>
+<p>We can checkout the remote branch and start tracking it with a local branch that has the same name, by using the following command:</p>
+<pre><code>  git checkout -b section-1 origin/1-navigation-and-containers
+</code></pre>
+<p>It's also possible to download a ZIP file for a given branch,  using the branch dropdown on this page on the top left, and then selecting the Clone or Download / Download as ZIP button.</p>
+<h1 id="other-courses">Other Courses</h1>
+<h1 id="angular-pwa-course">Angular PWA Course</h1>
+<p>If you are looking for the <a href="https://angular-university.io/course/angular-pwa-course">Angular PWA Course</a>, the repo with the full code can be found here:</p>
+<p><img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png" alt="Angular PWA Course - Build the future of the Web Today"></p>
+<h1 id="angular-security-masterclass">Angular Security Masterclass</h1>
+<p>If you are looking for the <a href="https://angular-university.io/course/angular-security-course">Angular Security Masterclass</a>, the repo with the full code can be found here:</p>
+<p><a href="https://github.com/angular-university/angular-security-course">Angular Security Masterclass</a>.</p>
+<p><img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png" alt="Angular Security Masterclass"></p>
+<h1 id="angular-advanced-library-laboratory-course">Angular Advanced Library Laboratory Course</h1>
+<p>If you are looking for the Angular Advanced Course, the repo with the full code can be found here:</p>
+<p><a href="https://angular-university.io/course/angular-advanced-course">Angular Advanced Library Laboratory Course: Build Your Own Library</a>.</p>
+<p><img src="https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png" alt="Angular Advanced Library Laboratory Course: Build Your Own Library"></p>
+<h2 id="rxjs-and-reactive-patterns-angular-architecture-course">RxJs and Reactive Patterns Angular Architecture Course</h2>
+<p>If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:</p>
+<p><a href="https://angular-university.io/course/reactive-angular-architecture-course">RxJs and Reactive Patterns Angular Architecture Course</a></p>
+<p><img src="https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png" alt="RxJs and Reactive Patterns Angular Architecture Course"></p>
+<h2 id="angular-ngrx-reactive-extensions-architecture-course">Angular Ngrx Reactive Extensions Architecture Course</h2>
+<p>If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:</p>
+<p><a href="https://angular-university.io/course/angular2-ngrx">Angular Ngrx Reactive Extensions Architecture Course</a></p>
+<p><a href="https://github.com/angular-university/ngrx-course">Github repo for this course</a></p>
+<p><img src="https://angular-academy.s3.amazonaws.com/thumbnails/ngrx-angular.png" alt="Angular Ngrx Course"></p>
+<h2 id="angular-2-and-firebase---build-a-web-application-course">Angular 2 and Firebase - Build a Web Application Course</h2>
+<p>If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:</p>
+<p><a href="https://angular-university.io/course/build-an-application-with-angular2">Angular 2 and Firebase - Build a Web Application</a></p>
+<p><a href="https://github.com/angular-university/angular-firebase-app">Github repo for this course</a></p>
+<p><img src="https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg" alt="Angular firebase course"></p>
+<h2 id="complete-typescript-2-course---build-a-rest-api">Complete Typescript 2 Course - Build A REST API</h2>
+<p>If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:</p>
+<p><a href="https://github.com/angular-university/complete-typescript-course">https://angular-university.io/course/typescript-2-tutorial</a></p>
+<p><a href="https://github.com/angular-university/complete-typescript-course">Github repo for this course</a></p>
+<p><img src="https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png" alt="Complete Typescript Course"></p>
+
+    </body>
+    </html>
